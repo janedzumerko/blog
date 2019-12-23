@@ -38,18 +38,15 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "homepage": "http://janedzumerko.com/blog/",
+  "homepage": "http://janedzumerko.com/blog",
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
   "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/janedzumerko/blog.git"
-  },
   "scripts": {
-    "build": "gatsby build",
+    "build": "rm -rf public && rm -rf docs && rm -rf .cache && gatsby build && mkdir docs && mv public/* docs/",
+    "now-build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
