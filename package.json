@@ -45,7 +45,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "rm -rf public && rm -rf docs && rm -rf .cache && gatsby build && mkdir docs && mv public/* docs/",
+    "build": "rm -rf public && rm -rf docs && rm -rf .cache && gatsby build --prefix-paths && mkdir docs && mv public/* docs/",
     "now-build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",

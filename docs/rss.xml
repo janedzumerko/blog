@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[just code blog]]></title><description><![CDATA[Blog for code and its explanation.]]></description><link>http://janedzumerko/blog</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 23 Dec 2019 23:18:46 GMT</lastBuildDate><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a great…]]></description><link>http://janedzumerko/blog/hello-world/</link><guid isPermaLink="false">http://janedzumerko/blog/hello-world/</guid><pubDate>Mon, 23 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new blog! How exciting!&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[just code blog]]></title><description><![CDATA[Blog for code and its explanation.]]></description><link>http://janedzumerko/blog</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 23 Dec 2019 23:22:30 GMT</lastBuildDate><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a great…]]></description><link>http://janedzumerko/blog/hello-world/</link><guid isPermaLink="false">http://janedzumerko/blog/hello-world/</guid><pubDate>Mon, 23 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new blog! How exciting!&lt;/p&gt;
 &lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;
 &lt;p&gt;Oh, and here’s a great picture from sunrise.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -10,7 +10,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2691efb27d8cceef17e5f4c70d116bca/93d1b/munchen_sunrise.jpg&quot;
+    href=&quot;/blog/static/2691efb27d8cceef17e5f4c70d116bca/93d1b/munchen_sunrise.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -23,13 +23,13 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Munchen sunrise&quot;
         title=&quot;Munchen sunrise&quot;
-        src=&quot;/static/2691efb27d8cceef17e5f4c70d116bca/88218/munchen_sunrise.jpg&quot;
-        srcset=&quot;/static/2691efb27d8cceef17e5f4c70d116bca/7237a/munchen_sunrise.jpg 148w,
-/static/2691efb27d8cceef17e5f4c70d116bca/0cfdf/munchen_sunrise.jpg 295w,
-/static/2691efb27d8cceef17e5f4c70d116bca/88218/munchen_sunrise.jpg 590w,
-/static/2691efb27d8cceef17e5f4c70d116bca/77d57/munchen_sunrise.jpg 885w,
-/static/2691efb27d8cceef17e5f4c70d116bca/5a917/munchen_sunrise.jpg 1180w,
-/static/2691efb27d8cceef17e5f4c70d116bca/93d1b/munchen_sunrise.jpg 4032w&quot;
+        src=&quot;/blog/static/2691efb27d8cceef17e5f4c70d116bca/88218/munchen_sunrise.jpg&quot;
+        srcset=&quot;/blog/static/2691efb27d8cceef17e5f4c70d116bca/7237a/munchen_sunrise.jpg 148w,
+/blog/static/2691efb27d8cceef17e5f4c70d116bca/0cfdf/munchen_sunrise.jpg 295w,
+/blog/static/2691efb27d8cceef17e5f4c70d116bca/88218/munchen_sunrise.jpg 590w,
+/blog/static/2691efb27d8cceef17e5f4c70d116bca/77d57/munchen_sunrise.jpg 885w,
+/blog/static/2691efb27d8cceef17e5f4c70d116bca/5a917/munchen_sunrise.jpg 1180w,
+/blog/static/2691efb27d8cceef17e5f4c70d116bca/93d1b/munchen_sunrise.jpg 4032w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         loading=&quot;lazy&quot;
       /&gt;
