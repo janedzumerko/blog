@@ -1,5 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[just code blog]]></title><description><![CDATA[Blog for code and its explanation.]]></description><link>http://janedzumerko/blog</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 23 Dec 2019 23:22:30 GMT</lastBuildDate><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a great…]]></description><link>http://janedzumerko/blog/hello-world/</link><guid isPermaLink="false">http://janedzumerko/blog/hello-world/</guid><pubDate>Mon, 23 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new blog! How exciting!&lt;/p&gt;
-&lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[just code blog]]></title><description><![CDATA[Blog for code and its explanation.]]></description><link>http://janedzumerko/blog</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 02 Jan 2020 15:56:57 GMT</lastBuildDate><item><title><![CDATA[How to quickly start with zsh shell]]></title><description><![CDATA[Quick introduction Shell is a command line interface (CLI) that allows the users to interact with the computer’s operating system. Before…]]></description><link>http://janedzumerko/blog/start-with-zsh-shell/</link><guid isPermaLink="false">http://janedzumerko/blog/start-with-zsh-shell/</guid><pubDate>Thu, 02 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Quick introduction&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Shell is a command line interface (CLI) that allows the users to interact with the computer’s operating system.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Before macOS Catalina, bash was the default shell on Mac OS X. Announced at &lt;a href=&quot;https://developer.apple.com/wwdc19/&quot;&gt;WWDC 2019&lt;/a&gt;, Zsh became &lt;a href=&quot;https://support.apple.com/en-ca/HT208050&quot;&gt;the default shell&lt;/a&gt; for Mac users. It is an interactive shell which incorporates a lot of useful features from other shells. In addition, there’s a bunch of things Zsh can do to make your terminal experience better. Enhanced auto-completions and globbing, spell correction, path replacement, the list goes on.&lt;/p&gt;
+&lt;h2&gt;Quick setup&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;After every instalation close the terminal window and reopen it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Open your terminal and enter &lt;code class=&quot;language-text&quot;&gt;chsh -s /bin/zsh&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Enter your password when prompted. After you close the terminal window and reopen it, you’ll be using Zsh.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;echo ${SHELL}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;expected result: /usr/bin/zsh or similiar&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;${SHELL} --version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;expected result: zsh 5.7.1 (x86_64-apple-darwin19.0) ir similiar&lt;/p&gt;
+&lt;h2&gt;Next steps aka install oh-my-zsh&lt;/h2&gt;
+&lt;p&gt;First you will need to install xcode-select &lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;xcode-select --install&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If you are using brew you should update and upgrade &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;brew update
+brew upgrade&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;and then install oh-my-zsh&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sh -c &amp;quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Go to config file &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;nano ~/.zshrc&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;and uncomment aliases at the bottom #Example aliases. Also set the editor you feel most comfortable with. At the end it should look something like this (if you like nano editor)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Example aliases
+alias zshconfig=&amp;quot;nano ~/.zshrc&amp;quot;
+alias ohmyzsh=&amp;quot;nano ~/.oh-my-zsh&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now you can open the config by entering &lt;code class=&quot;language-text&quot;&gt;zshconfig&lt;/code&gt;. &lt;/p&gt;
+&lt;h2&gt;More cool stuff&lt;/h2&gt;
+&lt;p&gt;If you want to have autosuggest in zsh install this plugin.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;and inside zsh config file update this line&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;plugins=(git zsh-autosuggestions)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can find more plugins &lt;a href=&quot;https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can set your own theme also by updating ZSH_THEME with the name of the theme. Check list of themes &lt;a href=&quot;https://github.com/ohmyzsh/ohmyzsh/wiki/Themes&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ZSH_THEME=macovsky-ruby&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;If you used nvm for node in bash (and you installed it with brew)&lt;/h2&gt;
+&lt;p&gt;Before zsh I used bash and installed node with nvm to support different versions of it. Once I switched to zsh it was saying &lt;code class=&quot;language-text&quot;&gt;zsh: command not found: node&lt;/code&gt; when I tried to do node command. For fixing this issue add this at the top of your zsh config file, before Oh My Zsh is sourced ( this line: # Path to your oh-my-zsh installation ).&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# for nvm installed with brew
+export NVM_DIR=&amp;quot;$HOME/.nvm&amp;quot;
+. &amp;quot;$(brew --prefix nvm)/nvm.sh&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;If you used Golang in bash&lt;/h2&gt;
+&lt;p&gt;And it is not working after upgrade to zsh, add this in zshconfig, also before Oh My Zsh is sourced.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# GOPATH
+export GOPATH=&amp;quot;$HOME/go&amp;quot;
+export PATH=&amp;quot;$PATH:$HOME/go/bin&amp;quot;
+export GO111MODULE=on&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;And that’s it. Happy coding!&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/janedzumerko/blog/tree/master/content/blog/start-with-zsh-shell/index.md&quot;&gt;Edit on GitHub&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new blog! Oh, and here’s a great picture from sunrise. Sunrise (or Sun up) is the moment when the upper limb of…]]></description><link>http://janedzumerko/blog/hello-world/</link><guid isPermaLink="false">http://janedzumerko/blog/hello-world/</guid><pubDate>Mon, 23 Dec 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new blog!&lt;/p&gt;
 &lt;p&gt;Oh, and here’s a great picture from sunrise.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Sunrise (or Sun up) is the moment when the upper limb of the Sun appears on the horizon in the morning. The term can also refer to the entire process of the solar disk crossing the horizon and its accompanying atmospheric effects.&lt;/p&gt;
