@@ -105,4 +105,4 @@ export GO111MODULE=on
 
 ### And that’s it. Happy coding!
 
-[Edit on GitHub](https://github.com/janedzumerko/blog/tree/master/content/blog/start-with-zsh-shell/index.md)
+[Edit on GitHub](https://github.com/janedzumerko/blog/edit/master/content/blog/start-with-zsh-shell/index.md)
